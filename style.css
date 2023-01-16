@@ -12,6 +12,7 @@
 
 
 body{
+    width: 100vw;
     font-family: 'Inter', sans-serif;
     background-color: var(--background-color);
 }
@@ -38,15 +39,12 @@ body{
     text-align: center;
 }
 
-.container{
-    width: 100vw;
-    height: 100vh;
-}
-
 .main{
     background: url(images/Background.png);
     background-size:contain ;
     background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
 }
 
 .main div{
@@ -83,34 +81,97 @@ body{
     color: var(--secondary-color);
 }
 
-.plataformas{
+.container{
+    width: 100vw;
+    padding: 100px;
     display: flex;
-    height: 90vh;
-    margin: 100px;
 }
 
-.plataformas .image{
+.container .image{
     width: 50%;
-    display: flex;
-    justify-content: center;
-    margin: 1rem;
+    padding: 1.2rem;
 }
 
-.plataformas .text{
+.container .text{
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.plataformas h1{
+.container h1{
     font-weight: 700;
     font-size: 48px;
     line-height: 120%;
 }
 
-.plataformas p{
+.container p{
     font-weight: 400;
     font-size: 16px;
+    line-height: 150%;
+    margin: 1rem 0;
+}
+
+.container .cta{
+    width: 162.68px;
+    height: 56px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    padding: 14px;
+    gap: 16px;
+}
+
+.telas{
+    flex-direction: row-reverse;
+}
+
+.dispositivos h1{
+    text-align: center;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.dispositivos{
+    flex-direction: column;
+}
+
+.dispositivos ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dispositivos ul h1{
+    font-size: 32px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 90px;
+}
+
+.logo{
+    padding: 1rem;
+}
+
+.footer ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 1.2rem 0;
+}
+
+.footer ul li{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.footer p{
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
     line-height: 150%;
 }
